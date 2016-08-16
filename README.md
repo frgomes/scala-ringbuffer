@@ -18,7 +18,7 @@ The snippet of code below is all you need to know:
     assert(ring.size    == 3)        // number of elements stored
     assert(ring.put(11) == 11)       // succeeded
     assert(ring.put(12) == sentinel) // failed, since it's full now
-    assert(ring.take    == 6)        // succeeded
+    assert(ring.take    == 11)       // succeeded
     ...
     assert(ring.size    == 0)        // number of elements stored
     assert(consume.take == sentinel) // failed, since it's empty now
